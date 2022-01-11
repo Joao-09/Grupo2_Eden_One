@@ -1,2 +1,3 @@
-# Grupo2_Eden_One
-Proyecto de historia Eden_One
+# Grupo2 Eden One
+juego de Eden One
+Creadores Anthony y Joao
