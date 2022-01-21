@@ -1,0 +1,43 @@
+                if op == 2:
+                    while True:
+                        creacioNombre = input("Username:\n")
+                        if len(creacioNombre)<5 or len(creacioNombre)>11:
+                            print("Length of username have to be longer than 5 and shorter than 11")
+                            input()
+                        else:
+
+                            while True:
+                                numero = False
+                                mayuscula = False
+                                espacio = False
+                                minuscula = False
+                                validar = False
+                                correcto = False
+                                creacioContraseña = input("password:\n")
+                                for char in creacioContraseña:
+                                    if char.isdigit():
+                                        numero = True
+                                    if char.isspace():
+                                        espacio = True
+                                    if char.isupper():
+                                        mayuscula = True
+                                    if char.islower():
+                                        minuscula = True
+                                if espacio == True:
+                                    print("passqword cannot contain spaces")
+                                    validar = False
+                                if numero == False:
+                                    print("Password has contain some digit")
+                                if mayuscula  == False:
+                                    print("Password have to incluide some uppercas and some lowercase")
+                                if  len(creacioContraseña)<8 or len(creacioContraseña)>12 and validar == True:
+                                    print("Length of password is not correct")
+                                    validar = False
+                                else:
+                                    if creacioContraseña.isalnum():
+                                        print("Password has to contain some especial character")
+                                        validar = False
+                                    print("User Create")
+                                    input("Enter to continue")
+                                    break
+                        break
